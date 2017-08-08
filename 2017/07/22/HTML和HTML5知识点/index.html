@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="html," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="XJCherish'notes" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="HTML &amp;lt; meta name = “description” content = “” &amp;gt; 只要设置”description”，那么百度搜索结果就能显示这些语句，这个叫SEO搜索引擎优化  &amp;lt; meta name = “keywords” content = “” &amp;gt; 设置关键字，告诉搜索引擎，这个网页是干嘛用的，提高搜索命中率。设置网页的title标题，也能助于SEO">
+<meta name="keywords" content="html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML和HTML5知识点">
+<meta property="og:url" content="http://yoursite.com/2017/07/22/HTML和HTML5知识点/index.html">
+<meta property="og:site_name" content="XJCherish&#39;notes">
+<meta property="og:description" content="HTML &amp;lt; meta name = “description” content = “” &amp;gt; 只要设置”description”，那么百度搜索结果就能显示这些语句，这个叫SEO搜索引擎优化  &amp;lt; meta name = “keywords” content = “” &amp;gt; 设置关键字，告诉搜索引擎，这个网页是干嘛用的，提高搜索命中率。设置网页的title标题，也能助于SEO">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-07-22T13:37:17.854Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML和HTML5知识点">
+<meta name="twitter:description" content="HTML &amp;lt; meta name = “description” content = “” &amp;gt; 只要设置”description”，那么百度搜索结果就能显示这些语句，这个叫SEO搜索引擎优化  &amp;lt; meta name = “keywords” content = “” &amp;gt; 设置关键字，告诉搜索引擎，这个网页是干嘛用的，提高搜索命中率。设置网页的title标题，也能助于SEO">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/07/22/HTML和HTML5知识点/"/>
+
+
+
+
+
+  <title>HTML和HTML5知识点 | XJCherish'notes</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">XJCherish'notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/22/HTML和HTML5知识点/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XJCherish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XJCherish'notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML和HTML5知识点</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-22T15:50:04+08:00">
+                2017-07-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p><strong> &lt; meta name = “description” content = “” &gt; </strong><br>只要设置”description”，那么百度搜索结果就能显示这些语句，这个叫SEO搜索引擎优化</p>
+<p><strong> &lt; meta name = “keywords” content = “” &gt; </strong><br>设置关键字，告诉搜索引擎，这个网页是干嘛用的，提高搜索命中率。<br>设置网页的title标题，也能助于SEO搜索引擎优化</p>
+<p><strong> HTML中所有文字之间，如果有空格、换行、tab，都将作为一个空格显示 </strong></p>
+<p><strong> 容器级的标签里面可以放置任何标签；文本级的标签只能放文字、图片、表单元素；其它的一律不能放。</strong><br><a id="more"></a></p>
+<ul>
+<li>文本级：p, span, a, b, i, u, em;</li>
+<li>容器级：div, h, li, dt, dd; </li>
+</ul>
+<p><strong> 字符 </strong><br>(1)、&amp;lt: 小于;&emsp;&emsp;(2)、&amp;gt: 大于;&emsp;&emsp;(3)、&amp;copy: ©;&emsp;&emsp;(4)、&amp;nbsp: 空格;&emsp;&emsp;(5)、&lt; br &gt;: 换行;</p>
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>&emsp;&emsp;HTML5定义了一系列新元素，如新语义标签、智能表单、多媒体标签等，可以帮助开发者创建富互联网应用，还提供了一些Javascript API，如地理定位、重力感应、硬件访问等，可以在浏览器内实现类原生应用，甚至结合Canvas我们可开发网页版游戏。</p>
+<h3 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h3><ul>
+<li>&lt; nav&gt;&emsp; 表示导航</li>
+<li>&lt; header&gt;&emsp; 表示页眉</li>
+<li>&lt; footer&gt;&emsp; 表示页脚</li>
+<li>&lt; section&gt;&emsp; 表示区块</li>
+<li>&lt; article&gt;&emsp; 表示文章 如文章、评论、帖子、博客</li>
+<li>&lt; aside&gt;&emsp; 表示侧边栏 如文章的侧栏</li>
+<li>&lt; figure&gt;&emsp; 表示媒介内容分组 与 ul &gt; li 做个比较</li>
+<li>&lt; mark&gt;&emsp; 表示标记 (带用“UI”，不怎么用)</li>
+<li>&lt; progress&gt;&emsp; 表示进度 (带用“UI”，不怎么用)</li>
+<li>&lt; time&gt;&emsp; 表示日期</li>
+</ul>
+<h3 id="兼容处理"><a href="#兼容处理" class="headerlink" title="兼容处理"></a>兼容处理</h3><p>将HTML5的新标签全部通过document.createElement(‘tagName’)来创建一遍，这样IE低版本也能正常解析HTML5新标签了;<br>在实际开发中我们更多采用的是通过检测IE浏览器的版本来加载三方的一个JS库来解决兼容问题.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt; !--[<span class="keyword">if</span> lte IE 8]&gt;</div><div class="line">&lt;script src = <span class="string">"js/html5shiv.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt; ![endif]</div></pre></td></tr></table></figure></p>
+<h3 id="智能表单"><a href="#智能表单" class="headerlink" title="智能表单"></a>智能表单</h3><h4 id="输入类型"><a href="#输入类型" class="headerlink" title="输入类型"></a>输入类型</h4><ul>
+<li>email：输入email格式</li>
+<li>tel：手机号码  </li>
+<li>url：只能输入url格式</li>
+<li>number：只能输入数字</li>
+<li>search：搜索框</li>
+<li>range：范围 滑动条</li>
+<li>color：拾色器</li>
+<li>time：时间</li>
+<li>date：日期 不是绝对的</li>
+<li>datetime：时间日期</li>
+<li>month：月份</li>
+<li>week：星期</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;form&gt;</div><div class="line">  &lt;input <span class="built_in">type</span>=<span class="string">"email"</span> value=<span class="string">"some@email.com"</span>&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
+<h4 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h4><p>&lt; datalist&gt; 数据列表，与input 配合使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"> &lt;input <span class="built_in">type</span>=”text” list=”data”&gt;</div><div class="line"> &lt;datalist id=”data”&gt;</div><div class="line"> 	&lt;option&gt;男&lt;/option&gt;</div><div class="line"> 	&lt;option&gt;女&lt;/option&gt;</div><div class="line"> 	&lt;option&gt;不详&lt;/option&gt; </div><div class="line">&lt;/datalist&gt;</div></pre></td></tr></table></figure></p>
+<p>&lt; progress&gt;&emsp;对象的下载进度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;progress&gt;</div><div class="line">	&lt;span id=<span class="string">"objprogress"</span>&gt;85&lt;/span&gt;%</div><div class="line">&lt;/progress&gt;</div></pre></td></tr></table></figure></p>
+<p>&lt; output&gt;   不可当做数据提交？<br>&lt; meter&gt;   表示度量器，不建议用作进度条<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meter  value=<span class="string">"81"</span>    min=<span class="string">"0"</span> max=<span class="string">"100"</span>  low=<span class="string">"60"</span>  high=<span class="string">"80"</span> /&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="keygen-元素"><a href="#keygen-元素" class="headerlink" title="keygen 元素"></a>keygen 元素</h4><p>&emsp;&emsp;keygen 元素的作用是提供一种验证用户的可靠方法。<br>&emsp;&emsp;keygen 元素是密钥对生成器（key-pair generator）。当提交表单时，会生成两个键，    一个是私钥，一个公钥。<br>&emsp;&emsp;私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。</p>
+<h4 id="表单属性"><a href="#表单属性" class="headerlink" title="表单属性"></a>表单属性</h4><ul>
+<li>placeholder： 占位符</li>
+<li>autofocus： 获取焦点</li>
+<li>multiple： 文件上传多选或多个邮箱地址  </li>
+<li>autocomplete： 自动完成，用于表单元素，也可用于表单自身(on/off)</li>
+<li>form:指定表单项属于哪个form，处理复杂表单时会需要</li>
+<li>novalidate： 关闭验证，可用于&lt; form&gt;标签</li>
+<li>required： 必填项</li>
+<li>pattern： 正则表达式 验证表单</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">手机号:&lt;input <span class="built_in">type</span>=<span class="string">"tel"</span> name=<span class="string">"tel"</span> required=<span class="string">"required"</span>       pattern=<span class="string">"^(\+86)?1[3,5,8](\d&#123;9&#125;)$"</span>&gt;</div></pre></td></tr></table></figure>
+<h4 id="表单事件"><a href="#表单事件" class="headerlink" title="表单事件"></a>表单事件</h4><p>oninput 用户输入内容时触发，可用于移动端输入字数统计<br>oninvalid 验证不通过时触发</p>
+<h3 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h3><h4 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h4><p>HTML5通过&lt; audio&gt;标签来解决音频播放的问题。</p>
+<ul>
+<li>autoplay：自动播放</li>
+<li>controls：是否显不默认播放控件</li>
+<li>loop：循环播放</li>
+<li>preload：预加载 同时设置autoplay时些属性失效</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;audio controls=<span class="string">"controls"</span>&gt;</div><div class="line">	&lt;<span class="built_in">source</span> src=<span class="string">"img/music.ogg"</span> <span class="built_in">type</span>=<span class="string">"audio/ogg"</span>/&gt;</div><div class="line">    &lt;<span class="built_in">source</span> src=<span class="string">"img/music.mp3"</span> <span class="built_in">type</span>=<span class="string">"audio/mpeg"</span>/&gt;</div><div class="line">    &lt;<span class="built_in">source</span> src=<span class="string">"img/music.wav"</span>/&gt; </div><div class="line">    您的浏览器不支持HTML音频播放功能</div><div class="line">&lt;/audio&gt;</div></pre></td></tr></table></figure>
+<h4 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h4><p>HTML5通过&lt; video&gt;标签来解决音频播放的问题。</p>
+<ul>
+<li>autoplay：自动播放</li>
+<li>controls：是否显不默认播放控件</li>
+<li>loop：循环播放</li>
+<li>preload：预加载 同时设置autoplay时些属性失效</li>
+<li>width：设置播放窗口宽度</li>
+<li>height：设置播放窗口的高度</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;video controls=<span class="string">"controls"</span>&gt;</div><div class="line">    &lt;<span class="built_in">source</span> src=<span class="string">"img/music.ogg"</span> <span class="built_in">type</span>=<span class="string">"video/ogg"</span>/&gt;</div><div class="line">    &lt;<span class="built_in">source</span> src=<span class="string">"img/music.mp4"</span> <span class="built_in">type</span>=<span class="string">"video/mp4"</span>/&gt;</div><div class="line">    您的浏览器不支持HTML视频播放功能</div><div class="line">&lt;/video&gt;</div></pre></td></tr></table></figure>
+<h3 id="DOM扩展"><a href="#DOM扩展" class="headerlink" title="DOM扩展"></a>DOM扩展</h3><p>&emsp;&emsp;document.querySelector(‘div’) 通过CSS选择器获取元素，符合匹配条件的第1个元素。<br>&emsp;&emsp;document.querySelectorAll(‘selector’) 通过CSS选择器获取元素，以类数组形式存在。</p>
+<h4 id="类名操作"><a href="#类名操作" class="headerlink" title="类名操作"></a>类名操作</h4><ul>
+<li>Node.classList.add(‘class’)：添加class</li>
+<li>Node.classList.remove(‘class’)：移除class</li>
+<li>Node.classList.toggle(‘class’)：切换class，有则移除，无则添加</li>
+<li>Node.classList.contains(‘class’)：检测是否存在class</li>
+<li>Node指一个有效的DOM节点，是一个通称。</li>
+</ul>
+<h4 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h4><p>&emsp;&emsp;在HTML5中我们可以自定义属性，其格式如下data-*=” “，例如data-info=”我是自定义属性”，通过Node.dataset[‘info’] 我们便可以获取到自定义的属性值。<br>&emsp;&emsp;Node.dataset是以类对象形式存在的，当我们如下格式设置时，则需要以驼峰格式才能正确获取data-my-name=”attr”，获取：node.dataset[‘myName’]。</p>
+<h3 id="新增API"><a href="#新增API" class="headerlink" title="新增API"></a>新增API</h3><h4 id="多媒体-1"><a href="#多媒体-1" class="headerlink" title="多媒体"></a>多媒体</h4><p>方法：</p>
+<ul>
+<li>load()： 加载</li>
+<li>play()： 播放</li>
+<li>pause()： 暂停</li>
+</ul>
+<p>属性：</p>
+<ul>
+<li>currentTime：视频播放的当前进度、</li>
+<li>duration：视频的总时间</li>
+<li>paused：视频播放的状态.</li>
+</ul>
+<p>事件：</p>
+<ul>
+<li>oncanplay：事件在用户可以开始播放视频/音频（audio/video）时触发。</li>
+<li>ontimeupdate：通过该事件来报告当前的播放进度.</li>
+<li>onended：播放完时触发</li>
+</ul>
+<p>全屏：</p>
+<ul>
+<li>video.webkitRequestFullScreen();</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">      </div><div class="line">      var h = document.querySelector(<span class="string">'h'</span>);</div><div class="line">      var p = document.querySelector(<span class="string">'p'</span>);</div><div class="line">      h.addEventListener(<span class="string">'click'</span>, <span class="keyword">function</span>(e) &#123;</div><div class="line">        <span class="keyword">if</span> (p.webkitRequestFullScreen)</div><div class="line">          p.webkitRequestFullScreen();</div><div class="line">        <span class="keyword">else</span></div><div class="line">          console.log(<span class="string">'不支持'</span>);</div><div class="line">        e.preventDefault();</div><div class="line">      &#125;);</div><div class="line">    &#125;)()</div></pre></td></tr></table></figure>
+<h4 id="拖拽"><a href="#拖拽" class="headerlink" title="拖拽"></a>拖拽</h4><p>在HTML5的规范中，我们可以通过为元素增加draggable=”true”来设置此元素是否可以进行拖拽操作，其中图片、链接默认是开启的。</p>
+<h5 id="拖拽元素"><a href="#拖拽元素" class="headerlink" title="拖拽元素"></a>拖拽元素</h5><p>页面中设置了draggable=”true”属性的元素</p>
+<h5 id="目标元素"><a href="#目标元素" class="headerlink" title="目标元素"></a>目标元素</h5><p>页面中任何一个元素都可以成为目标元素</p>
+<h5 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h5><p>拖拽元素：</p>
+<ul>
+<li>ondrag：应用于拖拽元素，整个拖拽过程都会调用</li>
+<li>ondragstart：应用于拖拽元素，当拖拽开始时调用</li>
+<li>ondragleave：应用于拖拽元素，当鼠标离开拖拽元素时调用</li>
+<li>ondragend：应用于拖拽元素，当拖拽结束时调用</li>
+</ul>
+<p>目标元素：</p>
+<ul>
+<li>ondragenter：应用于目标元素，当拖拽元素进入时调用</li>
+<li>ondragover：应用于目标元素，当停留在目标元素上时调用</li>
+<li>ondrop：应用于目标元素，当在目标元素上松开鼠标时调用</li>
+<li>ondragleave：应用于目标元素，当鼠标离开目标元素时调用</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">    <span class="comment">#target &#123;</span></div><div class="line">      padding: 20px;</div><div class="line">      height: 300px;</div><div class="line">      border: 5px dashed <span class="comment">#c0c0c0;</span></div><div class="line">      color: <span class="comment">#e0e0e0;</span></div><div class="line">      font-size: 40px;</div><div class="line">      line-height: 260px;</div><div class="line">      text-align: center;</div><div class="line">      -webkit-user-select: none;</div><div class="line">      cursor: pointer;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">#target.actived &#123;</span></div><div class="line">      border-color: <span class="comment">#888;</span></div><div class="line">      color: <span class="comment">#eaeaea;</span></div><div class="line">      box-shadow: 0 0 80px <span class="comment">#e0e0e0 inset;</span></div><div class="line">    &#125;</div><div class="line">  &lt;/style&gt;</div><div class="line">&lt;div class=<span class="string">"container"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"page-header"</span>&gt;</div><div class="line">      &lt;h1&gt;Drag&amp;Drop&lt;/h1&gt;&lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"jumbotron"</span>&gt;</div><div class="line">      &lt;p&gt;这是一段文字&lt;/p&gt;</div><div class="line">      &lt;img src=<span class="string">"toy.png"</span> alt=<span class="string">""</span>&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div id=<span class="string">"target"</span>&gt;</div><div class="line">      Drag something into here</div><div class="line">      &lt;ul id=<span class="string">"result"</span> class=<span class="string">"list-group"</span>&gt;&lt;/ul&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;br&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;script&gt;</div><div class="line">    (<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">      // 找到目标位置框框</div><div class="line">      var target = document.querySelector(<span class="string">'#target'</span>);</div><div class="line">      var fileList = document.querySelector(<span class="string">'#result'</span>);</div><div class="line">      // 注册拖拽进入</div><div class="line">      target.addEventListener(<span class="string">'dragenter'</span>, <span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">        this.classList.add(<span class="string">'actived'</span>);</div><div class="line">      &#125;);</div><div class="line">      // 离开</div><div class="line">      target.addEventListener(<span class="string">'dragleave'</span>, <span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">        this.classList.remove(<span class="string">'actived'</span>);</div><div class="line">      &#125;);</div><div class="line"></div><div class="line">      // 如果想要捕获drop事件 就一定得在该事件中阻止默认事件</div><div class="line">      target.addEventListener(<span class="string">'dragover'</span>, <span class="keyword">function</span>(e) &#123;</div><div class="line">        e.preventDefault();</div><div class="line">        e.stopPropagation();</div><div class="line">      &#125;);</div><div class="line"></div><div class="line">      // 当元素放到该对象上</div><div class="line">      target.addEventListener(<span class="string">'drop'</span>, <span class="keyword">function</span>(e) &#123;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (e.dataTransfer.files.length) &#123;</div><div class="line">          var files = e.dataTransfer.files;</div><div class="line">          <span class="keyword">for</span> (var i = 0; i &lt; files.length; i++) &#123;</div><div class="line">            var li = document.createElement(<span class="string">'li'</span>);</div><div class="line">            li.setAttribute(<span class="string">'class'</span>, <span class="string">'list-group-item'</span>);</div><div class="line">            // 创建信息的子节点</div><div class="line">            li.innerHTML = <span class="string">'&lt;h5 class="list-group-item-heading"&gt;'</span> </div><div class="line">            + files[i].name + <span class="string">'&lt;/h5&gt;&lt;p class="list-group-item-text"&gt;'</span> </div><div class="line">            + files[i].lastModifiedDate.toLocaleDateString() </div><div class="line">            + <span class="string">' '</span> + files[i].lastModifiedDate.toLocaleTimeString() </div><div class="line">            + <span class="string">' '</span> + (files[i].size / 1024).toFixed(2) + <span class="string">'KB&lt;/p&gt;'</span>;</div><div class="line">            fileList.appendChild(li);</div><div class="line">          &#125;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">          // 短路运算</div><div class="line">           /*var data = e.dataTransfer.getData(<span class="string">'text/plain'</span>)</div><div class="line">           || e.dataTransfer.getData(<span class="string">'text/uri-list'</span>);*/</div><div class="line">          var data = e.dataTransfer.getData(<span class="string">'text/plain'</span>);</div><div class="line">          <span class="keyword">if</span> (data) &#123;</div><div class="line">            // 拖入的是文本</div><div class="line">            target.innerHTML = data;</div><div class="line">          &#125; <span class="keyword">else</span> &#123;</div><div class="line">            var img = document.createElement(<span class="string">'img'</span>);</div><div class="line">            img.src = e.dataTransfer.getData(<span class="string">'text/uri-list'</span>);</div><div class="line">            target.appendChild(img);</div><div class="line">          &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        this.classList.remove(<span class="string">'actived'</span>);</div><div class="line"></div><div class="line">        e.preventDefault();</div><div class="line">        e.stopPropagation();</div><div class="line">      &#125;);</div><div class="line"></div><div class="line">    &#125;)();</div><div class="line">  &lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><p>&emsp;&emsp;提供window.history，对象我们可以管理历史记录，可用于单页面应用，Single Page Application，可以无刷新改变网页内容。<br>旧版本浏览器：</p>
+<ul>
+<li>history.back() 回退</li>
+<li>history.forward() 前进</li>
+</ul>
+<h3 id="自定义属性-1"><a href="#自定义属性-1" class="headerlink" title="自定义属性"></a>自定义属性</h3><h3 id="新增API-1"><a href="#新增API-1" class="headerlink" title="新增API"></a>新增API</h3>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"># html</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/20/node-js/" rel="next" title="node.js">
+                <i class="fa fa-chevron-left"></i> node.js
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/22/ES6/" rel="prev" title="ES6">
+                ES6 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="XJCherish" />
+          <p class="site-author-name" itemprop="name">XJCherish</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/XJCherish" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://webo.com/your-user-name" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://outlook.live.com/" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5"><span class="nav-number">2.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语义化标签"><span class="nav-number">2.1.</span> <span class="nav-text">语义化标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容处理"><span class="nav-number">2.2.</span> <span class="nav-text">兼容处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#智能表单"><span class="nav-number">2.3.</span> <span class="nav-text">智能表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入类型"><span class="nav-number">2.3.1.</span> <span class="nav-text">输入类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表单元素"><span class="nav-number">2.3.2.</span> <span class="nav-text">表单元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#keygen-元素"><span class="nav-number">2.3.3.</span> <span class="nav-text">keygen 元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表单属性"><span class="nav-number">2.3.4.</span> <span class="nav-text">表单属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表单事件"><span class="nav-number">2.3.5.</span> <span class="nav-text">表单事件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多媒体"><span class="nav-number">2.4.</span> <span class="nav-text">多媒体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#音频"><span class="nav-number">2.4.1.</span> <span class="nav-text">音频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视频"><span class="nav-number">2.4.2.</span> <span class="nav-text">视频</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM扩展"><span class="nav-number">2.5.</span> <span class="nav-text">DOM扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#类名操作"><span class="nav-number">2.5.1.</span> <span class="nav-text">类名操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义属性"><span class="nav-number">2.5.2.</span> <span class="nav-text">自定义属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新增API"><span class="nav-number">2.6.</span> <span class="nav-text">新增API</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#多媒体-1"><span class="nav-number">2.6.1.</span> <span class="nav-text">多媒体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拖拽"><span class="nav-number">2.6.2.</span> <span class="nav-text">拖拽</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#拖拽元素"><span class="nav-number">2.6.2.1.</span> <span class="nav-text">拖拽元素</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#目标元素"><span class="nav-number">2.6.2.2.</span> <span class="nav-text">目标元素</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#事件监听"><span class="nav-number">2.6.2.3.</span> <span class="nav-text">事件监听</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#历史"><span class="nav-number">2.7.</span> <span class="nav-text">历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义属性-1"><span class="nav-number">2.8.</span> <span class="nav-text">自定义属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新增API-1"><span class="nav-number">2.9.</span> <span class="nav-text">新增API</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">XJCherish</span>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
